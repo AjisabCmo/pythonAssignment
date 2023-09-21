@@ -1,0 +1,51 @@
+# fundamental data types
+int
+float
+bool
+str
+list
+set
+tuple
+dict
+
+#classes to create custom data type
+#Car
+
+#specialized data type
+
+None
+
+
+#this show all the value
+print(2)
+print(2.1)
+print(true)
+print("david")
+
+
+#this show all the data type
+print(type(2))
+print(type(2.1))
+print(type(true))
+print(type ("david"))
+
++     print(4+4)
+-     print(6-4)
+/     print (40 /4)
+*       print(10 * 4)
+%       print(10 % 4) this give out the remainder
+//       print (10//4)give the whole number and through away the remainder
+
+10/3 it will give 3.33
+
+10//3 it will truncate and give 3 and remove the remainder
+
+
+name = 'alphred'
+print(len(name)) it will print the name and output 7 i.e take in collections and also our string is a collection
+
+
+the print function stand  alone 
+
+sh pycharm.sh to get pycharm
+
