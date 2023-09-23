@@ -20,3 +20,4 @@ for number in picture:
     print()
 
 
+#0 to display ' ' and 1 to display   '*'

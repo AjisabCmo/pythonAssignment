@@ -1,5 +1,20 @@
+number = [10, 20, 15, 25, 5, 30, 35, 20, 10, 20]
+for i in range(0, len(number)):
+    for j in range(i + 1, len(number)):
+        if number[i] > number[j]:
+            number[i],number[j]=number[j],number[i]
 
-number =[10,20,15,25,5,30,35,20,10,20]
-for i in range (1,11):
-    for j in range(1,11):
-     print (f"{i} / {j}  = {i/j}", end =" ")
+
+print(number)
+l = len(number)
+
+if l % 2 == 0:
+
+
+    m1 = number[l // 2]
+    m2 = number[(l // 2) - 1]
+    mid = (m1 + m2) / 2
+    print(mid)
+else:
+    mid = number[l // 2]
+    print(mid)
