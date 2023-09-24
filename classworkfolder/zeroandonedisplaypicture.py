@@ -1,23 +1,47 @@
-picture = [
-[0, 0, 0, 1, 0, 0, 0],
-[0, 0, 1, 1, 1, 0, 0],
-[0, 1, 1, 1, 1, 1, 0],
-[1, 1, 1, 1, 1, 1, 1],
-[0, 0, 0, 1, 0, 0, 0],
-[0, 0, 0, 1, 0, 0, 0],
-[0, 0, 0, 1, 0, 0, 0],
-[0, 0, 0, 1, 0, 0, 0]
-]
+def zero_one_display_picture():
+    picture = [
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 1, 1, 1, 0, 0],
+        [0, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0]
+    ]
 
-for number in picture:
-    for digit in number:
-        if digit==0:
-            print(' ' ,end=' ')
-        else:
-            print('*' , end= ' ')
+    for number in picture:
+        for digit in number:
+            if digit == 0:
+                print(' ', end=' ')
+            else:
+                print('*', end=' ')
+
+        print()
+print(zero_one_display_picture())
 
 
-    print()
+
+# picture =[
+# [0, 0, 0, 1, 0, 0, 0],
+# [0, 0, 1, 1, 1, 0, 0],
+# [0, 1, 1, 1, 1, 1, 0],
+# [1, 1, 1, 1, 1, 1, 1],
+# [0, 0, 0, 1, 0, 0, 0],
+# [0, 0, 0, 1, 0, 0, 0],
+# [0, 0, 0, 1, 0, 0, 0],
+# [0, 0, 0, 1, 0, 0, 0]
+# ]
+#
+# for number in picture:
+#     for digit in number:
+#         if digit==0:
+#             print(' ' ,end=' ')
+#         else:
+#             print('*' , end= ' ')
+#
+#
+#     print()
 
 
 #0 to display ' ' and 1 to display   '*'
