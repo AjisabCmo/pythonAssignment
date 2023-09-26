@@ -19,4 +19,4 @@ def nest_pattern(rows):
 
         print()
 rows = 5
-print(nest_pattern(rows))
+nest_pattern(rows)

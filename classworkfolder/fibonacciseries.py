@@ -41,11 +41,11 @@
 
 
 
-def fibonacciseries():
+def fibonacciseries(number):
         x = 0
         y = 1
         sum = x + y
-        while x < 50:
+        while x < number:
                 print(x, end=' ')
                 x = y
                 y = sum
@@ -53,7 +53,7 @@ def fibonacciseries():
 
 
 
-print(fibonacciseries())
+fibonacciseries(100)
 
 
 # x=0

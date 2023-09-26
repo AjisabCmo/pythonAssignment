@@ -18,7 +18,7 @@ def zero_one_display_picture():
                 print('*', end=' ')
 
         print()
-print(zero_one_display_picture())
+zero_one_display_picture()
 
 
 

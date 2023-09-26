@@ -16,6 +16,7 @@ def fizz_buzz():
                     print(number)
         number += 1
 
+
 print(fizz_buzz())
 
 
