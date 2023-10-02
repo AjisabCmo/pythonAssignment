@@ -1,6 +1,6 @@
 p=int(input("enter the principal amount:"))
 r=int(input("enter the annual rate:"))
-# n=int (input("enter the number of year:"))
+n=int (input("enter the number of year:"))
 rValue = r / 100
 a = (rValue+1)
 a10 = a ** 10

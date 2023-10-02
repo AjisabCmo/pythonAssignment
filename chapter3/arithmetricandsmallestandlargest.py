@@ -1,15 +1,15 @@
-
-sum =0
-product=1
-smallest = float('inf')
-largest = float('-inf')
+number=int(input("enter a number:"))
+sum =number
+product=number
+smallest = number
+largest = number
 count =0
-while (count<4):
-    number= int(input(f"Enter the {count} of values  : "))
-
+for count in range (1,4):
+    number= int(input("enter a number  : "))
+    count += 1
     sum+=number
     product*=number
-    average = sum / 4
+    average = sum / count
 
 
 
@@ -19,7 +19,7 @@ while (count<4):
     if number > largest:
         largest = number
 
-    count += 1
+
 
 
 

@@ -1,5 +1,8 @@
-largest = float('-inf')
-smallest = float('inf')
+
+largest = 0;
+
+
+smallest =float('inf');
 
 
 number_inputs = int(input("Enter the number of values you want : "))
