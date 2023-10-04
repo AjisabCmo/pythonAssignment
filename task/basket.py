@@ -239,11 +239,19 @@ print(mymax(list1))
 # copied all the item in the list []
 
 
+def myis():
 
+    numbers=[1, 2, 3, 4, 5]
 
+    print(numbers[2:])
 
+myis()
 
+def youis():
+    my_list=["joy", 23, 100,'m', 5.5]
 
+    print(len(my_list))
+youis()
 
-
-
+letters=list('abcdefghij')
+print(letters)

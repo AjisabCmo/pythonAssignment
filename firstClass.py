@@ -104,3 +104,8 @@ print(_ismail)
    # print("Stay home...")
 
 
+# list in python
+
+my_playlist = []
+names =["arua","joy","qudus","ope"]
+names2=list("isreal","abbey","mando")
