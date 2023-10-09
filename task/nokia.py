@@ -58,6 +58,7 @@ def main_menu():
         sim_services()
 
 def sim_services():
+
         print("""
         Press 01 for SIM services
         Press 00 for Main Menu
@@ -497,7 +498,7 @@ def automatic_answer():
     Press 00 for Main Menu
     """)
     response = input()
-    if response == '01':
+    if response == ' 01':
         settings()
     elif response == '00':
         main_menu()
@@ -507,13 +508,13 @@ def automatic_answer():
 
 def phone_line_in_use():
     print("""
-            press 01 for settings
+            press 1 for settings
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         settings()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -521,13 +522,13 @@ def phone_line_in_use():
 
 def own_number_sending():
     print("""
-            press 01 for settings
+            press 1 for settings
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         settings()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -535,13 +536,13 @@ def own_number_sending():
 
 def call_waiting_options():
     print("""
-            press 01 for settings
+            press 1 for settings
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         settings()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -549,13 +550,13 @@ def call_waiting_options():
 
 def speed_dialling():
     print("""
-            press 01 for settings
+            press 1 for settings
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         settings()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -563,13 +564,13 @@ def speed_dialling():
 
 def automatic_redial():
     print("""
-            press 01 for settings
+            press 1 for settings
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         settings()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -610,14 +611,14 @@ def tones():
 
 def screen_saver():
     print("""
-            blank
-            press 01 for tones
+            screen saver
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -625,67 +626,33 @@ def screen_saver():
 
 def vibrating_alert():
     print("""
-            blank
-            press 01 for tones
+            vibrating alert
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 
 
-if __name__ == "__main__":
-    while True:
-        print("Choose an option:")
-        print("1. Phone Line In Use")
-        print("2. Own Number Sending")
-        print("3. Call Waiting Options")
-        print("4. Speed Dialling")
-        print("5. Automatic Redial")
-        print("6. Tones")
-        print("7. Screen Saver")
-        print("8. Vibrating Alert")
-        print("0. Exit")
 
-        choice = int(input("Enter your choice: "))
-
-        if choice == 1:
-            phone_line_in_use()
-        elif choice == 2:
-            own_number_sending()
-        elif choice == 3:
-            call_waiting_options()
-        elif choice == 4:
-            speed_dialling()
-        elif choice == 5:
-            automatic_redial()
-        elif choice == 6:
-            tones()
-        elif choice == 7:
-            screen_saver()
-        elif choice == 8:
-            vibrating_alert()
-        elif choice == 0:
-            break
-        else:
-            print("Invalid choice. Please try again.")
 
 
 def warning_and_game_tones():
     print("""
-            blank
-            press 01 for tones
+            warning and game tones
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -693,14 +660,14 @@ def warning_and_game_tones():
 
 def keypad_tones():
     print("""
-            blank
-            press 01 for tones
+            keypad tones
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -708,14 +675,14 @@ def keypad_tones():
 
 def message_alert_tone():
     print("""
-            blank
-            press 01 for tones
+            message alert tone
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -723,14 +690,14 @@ def message_alert_tone():
 
 def composer():
     print("""
-            blank
-            press 01 for tones
+            composer
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -738,14 +705,14 @@ def composer():
 
 def incoming_call_alert():
     print("""
-            blank
-            press 01 for tones
+            incoming call alert
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -753,14 +720,14 @@ def incoming_call_alert():
 
 def ringing_volume():
     print("""
-            blank
-            press 01 for tones
+           ringing volume
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -768,14 +735,14 @@ def ringing_volume():
 
 def ringing_tone():
     print("""
-            blank
-            press 01 for tones
+            ringing tone
+            press 1 for tones
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         tones()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -783,14 +750,14 @@ def ringing_tone():
 
 def dialled_numbers():
     print("""
-               blank
-               press 01 for call register
+               dialled numbers
+               press 1 for call register
                press 00 for main menu
                """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -828,14 +795,14 @@ def call_register():
 
 def prepaid_credit():
     print("""
-           blank
-           press 01 for call register
+           prepaid credit
+           press 1 for call register
            press 00 for main menu
            """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -855,14 +822,14 @@ def call_cost_settings():
 
 def show_costs_in():
     print("""
-            blank
-            press 01 for call register
+            show cost in
+            press 1 for call register
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -870,14 +837,14 @@ def show_costs_in():
 
 def call_cost_limit():
     print("""
-            blank
-            press 01 for call register
+            call cost limit
+            press 1 for call register
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -900,79 +867,44 @@ def show_call_costs():
 
 def clear_counters():
     print("""
-            blank
-            press 01 for call register
+           clear counters
+            press 1 for call register
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 
-#
-# if __name__ == "__main__":
-#     while True:
-#         print("Choose an option:")
-#         print("1. Phone Line In Use")
-#         print("2. Own Number Sending")
-#         print("3. Call Waiting Options")
-#         print("4. Speed Dialling")
-#         print("5. Automatic Redial")
-#         print("6. Tones")
-#         print("7. Screen Saver")
-#         print("8. Vibrating Alert")
-#         print("0. Exit")
-#
-#         choice = int(input("Enter your choice: "))
-#
-#         if choice == 1:
-#             phone_line_in_use()
-#         elif choice == 2:
-#             own_number_sending()
-#         elif choice == 3:
-#             call_waiting_options()
-#         elif choice == 4:
-#             speed_dialling()
-#         elif choice == 5:
-#             automatic_redial()
-#         elif choice == 6:
-#             tones()
-#         elif choice == 7:
-#             screen_saver()
-#         elif choice == 8:
-#             vibrating_alert()
-#         elif choice == 0:
-#             break
-#         else:
-#             print("Invalid choice. Please try again.")
+
 def all_calls_cost():
     print("""
-            blank
-            press 01 for call register
+            all calls cost
+            press 1 for call register
             press 00 for main menu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def last_call_cost():
     print("""
-            blank
-            press 01 for call register
+            last call cost
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -999,140 +931,140 @@ def show_call_duration():
 
 def clear_timer():
     print("""
-            blank
-            press 01 for call register
+             clear timer
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def dialled_calls_duration():
     print("""
-             blank
+             dialled calls duration
              press 01 for call register
              press 00 for mainMenu
              """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def received_calls_duration():
     print("""
-            blank
-            press 01 for call register
+            received calls duration
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def all_calls_duration():
     print("""
-            blank
-            press 01 for call register
+            all calls duration
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def last_call_duration():
     print("""
-            blank
-            press 01 for call register
+            last call duration
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def erase_recent_call_lists():
     print("""
-             blank
-             press 01 for call register
+             erase recent call lists
+             press 1 for call register
              press 00 for mainMenu
              """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def dialled_number():
     print("""
-             blank
-             press 01 for call register
+             dialled number
+             press 1 for call register
              press 00 for mainMenu
              """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def received_calls():
     print("""
-            blank
-            press 01 for call register
+            received calls
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def missed_calls():
     print("""
-            blank
-            press 01 for call register
+            missed calls
+            press 1 for call register
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         call_register()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 def chat():
     print("""
-            blank
-            press 01 for chat
+            chat
+            press 1 for chat
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         chat()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1176,14 +1108,14 @@ def messages():
 
 def service_command_editor():
     print("""
-            blank
-            press 01 for messages
+            service command editor
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1191,14 +1123,14 @@ def service_command_editor():
 
 def voice_mailbox_number():
     print("""
-            blank
-            press 01 for messages
+            voice mailbox number
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1206,14 +1138,14 @@ def voice_mailbox_number():
 
 def info_service():
     print("""
-            blank
-             press 01 for messages
+            info service 
+             press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1249,14 +1181,14 @@ def common():
 
 def character_support():
     print("""
-            blank
-             press 01 for messages
+            character support
+             press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1264,14 +1196,14 @@ def character_support():
 
 def reply_via_same_centre():
     print("""
-            blank
-            press 01 for messages
+            reply via same centre
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1279,40 +1211,40 @@ def reply_via_same_centre():
 
 def delivery_reports():
     print("""
-            blank
-            press 01 for messages
+            delivery reports
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 
 def message_centre_number():
-    print(""" blank
-            press 01 for messages
+    print(""" message centre number
+            press 1 for messages
             press 00 for mainMenu""")
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 
 def message_sent_as():
-    print("""blank
-            press 01 for messages
+    print("""message sent as
+            press 1 for messages
             press 00 for mainMenu""")
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1334,34 +1266,20 @@ def set1():
 
 def message_validity():
     print("""
-            blank
-            press 01 for messages
+            message validity
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 
 
-# if __name__ == "__main__":
-#     while True:
-#         print("Choose an option:")
-#         print("1. Messages")
-#         print("0. Exit")
-#
-#         choice = int(input("Enter your choice: "))
-#
-#         if choice == 1:
-#             messages()
-#         elif choice == 0:
-#             break
-#         else:
-#             print("Invalid choice. Please try again.")
 
 
 def phone_book_option():
@@ -1378,14 +1296,14 @@ def phone_book_option():
 
 def memory_status():
     print("""
-            blank
-            press 01 for phone book
+            memory status
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1393,14 +1311,14 @@ def memory_status():
 
 def type_of_view():
     print("""
-            blank
-            press 01 for phone book
+            type of view
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1408,14 +1326,14 @@ def type_of_view():
 
 def search():
     print("""
-            blank
-            press 01 for phone book
+            search
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1423,14 +1341,14 @@ def search():
 
 def service_nos():
     print("""
-            blank
-            press 01 for phone book
+            service nos
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1438,14 +1356,14 @@ def service_nos():
 
 def add_name():
     print("""
-            blank
-            press 01 for phone book
+            add name
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1453,14 +1371,14 @@ def add_name():
 
 def erase():
     print("""
-            blank
-            press 01 for phone book
+            erase
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1468,14 +1386,14 @@ def erase():
 
 def edit():
     print("""
-            blank
-            press 01 for phone book
+            edit
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1483,14 +1401,14 @@ def edit():
 
 def assign_tone():
     print("""
-            blank
-            press 01 for phone book
+            assign tone
+            press 1 for phone book
             press 00 for MainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1498,14 +1416,14 @@ def assign_tone():
 
 def send_b_card():
     print("""
-            blank
-            press 01 for phone book
+            send b card 
+            press 1 for phone book
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1513,14 +1431,14 @@ def send_b_card():
 
 def speed_dials():
     print("""
-            blank
-            press 01 for phone book
+            speed dials
+            press 1 for phone book
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1528,14 +1446,14 @@ def speed_dials():
 
 def voice_tags():
     print("""
-            blank
-            press 01 for phone book
+            voice tags
+            press 1 for phone book
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         phone_book()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1579,14 +1497,14 @@ def phone_book():
 
 def write_messages():
     print("""
-            blank
-            press 01 for messages
+            write messages
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1594,14 +1512,14 @@ def write_messages():
 
 def inbox():
     print("""
-            blank
-            press 01 for messages
+            inbox
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1609,14 +1527,14 @@ def inbox():
 
 def outbox():
     print("""
-            blank
-            press 01 for messages
+            outbox
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1624,14 +1542,14 @@ def outbox():
 
 def picture_messages():
     print("""
-            blank
-            press 01 for messages
+            picture messages
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1639,14 +1557,14 @@ def picture_messages():
 
 def templates():
     print("""
-            blank
-            press 01 for messages
+            templates
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1654,14 +1572,14 @@ def templates():
 
 def smileys():
     print("""
-            blank
-            press 01 for messages
+            smiley
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1687,14 +1605,14 @@ def common():
 
 def character_support():
     print("""
-            blank
-            press 01 for messages
+            character support
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1702,14 +1620,14 @@ def character_support():
 
 def reply_via_same_centre():
     print("""
-            blank
-            press 01 for messages
+            reply via same centre
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1717,14 +1635,14 @@ def reply_via_same_centre():
 
 def delivery_reports():
     print("""
-            blank
-            press 01 for messages
+            delivery reports
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
@@ -1735,36 +1653,20 @@ def delivery_reports():
 
 def message_validity():
     print("""
-            blank
-            press 01 for messages
+            message validity
+            press 1 for messages
             press 00 for mainMenu
             """)
     response = int(input())
     if response == 1:
         messages()
-    elif response == 0:
+    elif response == 00:
         main_menu()
     else:
         main_menu()
 
 
-# if __name__ == "__main__":
-#     while True:
-#         print("Choose an option:")
-#         print("1. Messages")
-#         print("2. Phone Book")
-#         print("0. Exit")
-#
-#         choice = int(input("Enter your choice: "))
-#
-#         if choice == 1:
-#             messages()
-#         elif choice == 2:
-#             phone_book()
-#         elif choice == 0:
-#             break
-#         else:
-#             print("Invalid choice. Please try again.")
 
 
 
+main_menu()
