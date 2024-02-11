@@ -2,6 +2,615 @@
 # import random
 #
 
+
+# price of a house is $1m .if buyer has good credit score ,they need to put down 10%,otherwise they need to put down 20%.print down payment
+# in logical operation :AND both must be true . OR one of it must be true so that both can be true .
+# comparison operator:> < >= <=
+# equality operator: == !=
+
+
+# if name is less than 3 characters long ,name must be at least 3 characters otherwise if it is more than 50 characters long print name can be maximum of 50 character long otherwise name look good
+
+
+
+x=[1,2,3]
+y=x.copy()
+
+x.append(4)
+print(y)
+
+
+
+
+
+a = [[]]*3
+a[1].append(7)
+print(a)
+
+
+
+
+
+
+
+
+
+j = 4
+while(j):
+    j = j -1
+    print(j,end = " | ")
+
+
+
+
+
+
+
+
+
+
+x = 'abcd'
+for i in range(len(x)):
+    print(i)
+
+
+
+
+
+
+
+
+def sum(T):
+    # T+=1
+    return value
+value = 20
+result = sum(value)
+print(result)
+
+
+
+
+fruits = {'kiwi', 'jack fruit' , 'lichi'}
+fruits.clear()
+print(fruits)
+
+
+
+
+
+numbers = [1,2,3,4,5,]
+for num in numbers:
+    if num % 2 ==0:
+        continue
+    print(num**2,end= " ")
+
+
+
+
+
+
+my_list = [2,4,6,8,10]
+total = sum(my_list)
+length = len(my_list)
+result = total/length
+print(result)
+
+
+
+
+
+
+
+j = 1
+while j <= 2 :
+    print(j, end=" ")
+    j+=1
+
+
+
+
+
+
+
+
+dict = {}
+list1 = [1,2,3]
+list2 = [4,5,6]
+print(dict.fromkeys(list1,list2))
+
+
+
+
+
+a = []
+b = [[0,1,2,3],[4,5,6,7],[8,9,10,11]]
+for i in range(4):
+    a.append([row[i]for row in b])
+
+
+print(a)
+
+
+
+
+
+
+
+my_lis = [1,2,3,4,5]
+new_lis =[x**x for x in my_lis if x % 2==0]
+print(new_lis)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+msg = "aeroplane"
+ch = msg[-0]
+print(ch)
+
+
+
+
+
+
+a = 10
+b = 60
+if a and b > 20:
+    print("hello")
+else:
+    print("hi")
+
+
+
+
+
+x = 3
+y = 3.0
+if x ==y:
+    print("x and  y are equal")
+
+else:
+    print(" x and y are not equal")
+
+
+
+
+
+
+
+
+
+
+
+a, *b = 10,20,30
+print((b))
+
+
+
+
+
+
+
+
+
+
+
+def print_diamond(row):
+    for i in range(1,row+1 ):
+        print(" " * (row -i)+ "*" *(2 * i -1))
+
+
+    for i in range(row-1,0,-1):
+        print(" " * (row - i)+ "*" *(2 * i -1))
+
+row = 5
+print(print_diamond(row))
+
+
+
+
+
+
+
+
+
+
+
+result = "this is a very long string" * (-1)
+print(result)
+
+
+
+
+
+
+color = {"Black","Blue","Green"}
+color.add("Red")
+color.add("Blue")
+print(color)
+
+
+
+
+my_list =[1,2,3,4,5]
+my_list[1:3] = [7,8,9]
+print(my_list)
+
+
+
+
+def func(x):
+    return x * 2
+result = func(2)
+result= func(result)
+result= func(result)
+print(result)
+
+
+
+
+
+def modify_str():
+    str1="i love python"
+    str1.replace("love","enjoy").split()
+    return str1
+print(modify_str())
+
+
+
+
+
+
+
+
+def add(a,b):
+    return a+5, b+5
+print(add(10,11))
+
+
+
+
+
+number = [1,2,2,3,3,4,5,6,7,7]
+number.reverse()
+
+print(number)
+
+a={1,2,3}
+b = a.add(4)
+print(b)
+
+
+
+
+
+
+
+my_list =[10,20,30,40,50]
+total = 0
+for num in my_list:
+    total += num
+print(total)
+
+
+
+
+number = [1,2,2,3,3,4,5,6,7,7]
+new_list = []
+for num in number:
+    if num not in new_list:new_list.append(num)
+print(new_list)
+
+
+
+
+
+
+
+
+matrix = [[1,2,3],
+          [4,5,6],
+          [7,8,9]]
+for row in matrix:
+    for item in row:
+        print(item)
+# get the each number from a list
+
+
+
+
+
+number = [2,3,4,5]
+largest =number[0]
+for i in number:
+    if i > largest:
+        largest = i
+print(largest)
+
+
+
+
+
+
+
+
+
+numbers = [5,2,5,2,2]
+
+for x in numbers:
+
+    output = ""
+    for y in range(x):
+        output += "x"
+    print(output)
+# converting numbers into a shape like xxxx
+
+
+for x in range(4):
+    for y in range(3):
+        print(f"({x},{y})")
+
+
+
+
+
+
+
+
+prices = [10,20,30]
+total=0
+for price in prices:
+    total = total + price
+print(f"Total is :{total}")
+
+
+
+
+
+
+
+command = ""
+started = False
+while True:
+    command = input("<").lower()
+    if command == "start":
+        if started:
+            print("car already started..")
+        else:
+            started = True
+            print("car started...")
+
+    elif command == "stop":
+        if not started:
+            print("car is already stopped..")
+        else:
+            started = False
+            print("car stopped...")
+    elif command == "help":
+        print("""
+start-to start the car
+stop- to stop the car 
+quit - to quit 
+                       """)
+    elif command == "quit":
+        break
+    else:
+        print("sorry i dont understand ")
+# this is a car game
+
+
+
+
+
+
+
+print("abcd"[2:])
+
+
+a = [1,2],(1,2)
+print(type(a))
+
+
+
+
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("guess:"))
+    guess_count+=1
+    if guess == secret_number:
+        print("you won!")
+        break
+else:
+    print("sorry you fail!")
+
+
+
+
+i = 1
+while i  <= 5:
+    print("*" * i)
+    i = i + 1
+print("Done")
+
+
+
+
+
+
+x = {"a": 1, "b":2,"c":3}
+print(x.items())
+# this print out a sequence of tuple
+l=['a','b','c','d']
+res = ''.join(l)
+
+
+
+print(res)
+
+
+
+
+
+String = "PYTHON"
+List = list((x,len(x))for x in String)
+print(List)
+
+
+
+values = {0:'a',1:'b',2:'c'}
+for item in values:
+    print(item,end = ' ')
+
+
+i = 2
+for i in range (i < 2):
+    i = i + 3
+print(f' \n i is :{i}')
+
+
+
+
+
+
+x=[1,2,3]
+
+y=x.copy()
+x.append(4)
+
+print(y)
+
+
+
+
+
+
+
+name = "lola"
+
+if len(name) < 3:
+    print("name must be at least 3 character long ")
+elif len(name) >50:
+    print("name can be maximum of 50 character long ")
+else:
+    print("name look good ")
+
+
+
+
+has_good_credit=False
+has_criminal_record = True
+
+if has_good_credit or not has_criminal_record:
+    print("eligible for loan")
+
+
+
+price = 1000000
+has_good_credit=True
+if has_good_credit:
+    down_payment=price * 0.1
+else:
+    down_payment = price * 0.2
+print(f"down_payment is: $ {down_payment}")
+
+
+x=2.9
+print(abs(-2.9))
+# abs always return a positve value
+
+x=10
+x=x+3
+x+=3
+# argumented assignment
+print(x)
+
+
+
+
+
+course = "Python for beginners"
+print(course.find("beginners"))
+print(course.replace("beginners","absolute beginners"))
+print ("python" in course)
+# this evaluate to true if the word is in course .the IN operator produces a boolean value
+print(course.title())
+
+first = "ismail"
+second = "abiodun"
+
+result = f'{first} [{second}] is a coder'
+print(result)
+
+
+me = "abdullahi"
+print(me[1:-1])
+# this will start at index 1 and end at the last index -1 removing the last character
+
+
+
+
+course='python for beginner'
+print(course[7])
+
+
+
+
+
+weight_lbs=input("enter weight")
+weight_kg = int(weight_lbs) * 0.45
+print(weight_kg)
+# convert weight to kg
+
+
+
+weight =int( input ("weight:"))
+unit = (input ("(L)bs or (K)g:"))
+if unit.upper() == "L":
+    coverted = weight * 0.45
+    print(f" you  are {converted} kilos")
+else:
+    converted = weight / 0.45
+    print((f"you are {converted} pounds"))
+
+
+
+name = input("enter name ")
+color= input("enter color")
+print(name + " like" + color)
+# concatenating strings
+
+
+minidict = { 'name': 'Tutorialspoint', 'name':'website'}
+print(minidict['name'])
+
 import re
 
 print("True" if re.fullmatch(r'\d+[A-Z][a-z]*[A-Z][a-z]*', '2FeTo') else "false")
@@ -12,6 +621,9 @@ print(contact)
 
 for phone in re.finditer(r"\d{3}-\d{3}-\d{4}",contact):
     print(phone.group())
+
+
+
 
 
 learn=[2,2,1,1,5]
